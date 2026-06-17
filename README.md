@@ -9,6 +9,41 @@ for the measured numbers, charts, and example suggestions.
 
 **Run on:** MacBook Air, Apple M1, 8 GB RAM, macOS 14.2.1 (Metal).
 
+## Results at a glance
+
+Full analysis in [WRITEUP.md](WRITEUP.md); raw numbers and all charts in [results/](results/).
+*(Absolute latencies are inflated by thermal throttling on the fanless M1 — relative comparisons hold.)*
+
+### Latency — KV-cache reuse is the biggest lever
+
+On a long context, **cold prefill scales to ~9 s at 2,300 tokens while cache reuse stays flat at ~80 ms (~100x)**:
+
+![long-context cache](results/longcontext.png)
+
+Output length is the other knob (fewer tokens → less decode):
+
+| output granularity | n_predict | median | p90 |
+|---|---|---|---|
+| word | 3 | 543 ms | 960 ms |
+| phrase–sentence | 16 | 828 ms | 1,734 ms |
+| multi-line | 64 | 887 ms | 1,940 ms |
+
+### Accuracy — 60% exact next-word (a floor)
+
+Many "misses" are valid-but-different (model `"next chapter of the Chicago Bulls"` vs true `"next era of Bulls basketball"`). Gating on token logprobs trades coverage for precision (**60% base rate → ~77% precision at 65% coverage**):
+
+![confidence gating](results/precision_coverage.png)
+
+### Quantization — ship Q4
+
+Q8 (4.6 GB) doesn't fit cleanly on 8 GB; it swaps catastrophically (a 105 s call), so **Q4 (~3 GB) is the on-device target**:
+
+![Q4 vs Q8](results/quant.png)
+
+### Model choice — base, not `-it`
+
+base continues raw text cleanly; `-it` leaks chatbot artifacts on raw prefixes and, used as a chat model, spends 774 chars "thinking" before answering. See [results/model_headtohead.md](results/model_headtohead.md).
+
 ## How it works
 
 The harness walks a cursor through a passage; at each stop it sends the text-so-far (a growing
