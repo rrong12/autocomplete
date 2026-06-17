@@ -1,0 +1,17 @@
+# Models (large — never commit GGUFs)
+*.gguf
+models/
+
+# Cloned upstream tooling (for safetensors->GGUF conversion)
+llama.cpp/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Results (CSVs, charts, summaries) ARE part of the deliverable — keep them tracked.
+
+# OS
+.DS_Store

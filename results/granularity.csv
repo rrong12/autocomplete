@@ -1,0 +1,31 @@
+granularity,n_predict,prefix_len,total_ms_median,total_ms_p90,suggestion
+word,3,5,179.1,182.2,OF THE WOOD
+word,3,161,211.7,213.8,15
+word,3,325,389.8,408.1,John Paxson
+word,3,478,396.5,416.7,personality and leadership
+word,3,604,487.7,496.0,and we are
+word,3,720,567.2,573.6,next chapter of
+word,3,875,652.6,656.8,He has also
+word,3,1003,764.5,765.5,in the Western
+word,3,1167,841.3,847.6,said Splitter
+word,3,1313,940.5,959.8,players
+phrase_sentence,16,5,289.5,294.1,OF THE WOODS
+phrase_sentence,16,161,651.1,660.7,15th head coach in franchise history.
+phrase_sentence,16,325,507.5,514.5,John Paxson
+phrase_sentence,16,478,834.2,851.8,personality and leadership style would fit with our team
+phrase_sentence,16,604,999.5,1012.1,"and we are excited to have him lead our team."""
+phrase_sentence,16,720,837.1,859.1,"next chapter of the Chicago Bulls."""
+phrase_sentence,16,875,1408.5,1734.3,"He has also served as an assistant coach for the Los Angeles Lakers, the Utah"
+phrase_sentence,16,1003,904.8,921.2,in the Western Conference.
+phrase_sentence,16,1167,939.3,962.2,said Splitter
+phrase_sentence,16,1313,913.4,928.6,players
+multiline,64,5,295.7,305.9,OF THE WOODS
+multiline,64,161,659.5,661.6,15th head coach in franchise history.
+multiline,64,325,509.9,525.5,John Paxson
+multiline,64,478,859.4,1027.5,personality and leadership style would fit with our team
+multiline,64,604,992.9,1006.7,"and we are excited to have him lead our team."""
+multiline,64,720,850.8,851.8,"next chapter of the Chicago Bulls."""
+multiline,64,875,1898.9,1940.5,"He has also served as an assistant coach for the Los Angeles Lakers, the Utah Jazz, and the San Antonio Spurs."
+multiline,64,1003,923.9,939.7,in the Western Conference.
+multiline,64,1167,946.3,970.2,said Splitter
+multiline,64,1313,932.8,1076.2,players

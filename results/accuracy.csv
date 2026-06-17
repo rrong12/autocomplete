@@ -1,0 +1,29 @@
+passage,prefix_len,next_word_match,prefix_overlap,min_logprob,suggestion,truth_head
+article,5,0,0,-3.488,2016,ANNOUNCE TIAGO SPLITTER AS HEAD COACH
+article,161,0,0,-2.193,15th head coach in franchise history.,25th head coach in franchise history.
+article,325,0,0,-0.262,John Paxson,"Bryson Graham. ""Throughout our process,"
+article,478,0,0,-2.853,personality and leadership style would fit with our team,teams compete every single night. He ha
+article,604,1,2,-1.524,"and we are excited to have him lead our team.""",and we believe his vision is the right
+article,720,1,1,-1.188,"next chapter of the Chicago Bulls.""","next era of Bulls basketball.""
+
+Splitte"
+article,875,0,0,-2.881,"He has also served as an assistant coach for the Los Angeles Lakers, the Utah",Elevated to the role early in the seaso
+article,1003,1,4,-0.9,in the Western Conference.,"in the Western Conference.
+
+""I want to"
+article,1167,1,2,-0.491,said Splitter,"said Splitter. ""The Bulls represent eve"
+article,1313,1,1,-0.657,players,players ready to grow. I'm grateful for
+email,2,0,0,-1.306,",","John,
+
+Hope you are well since the last"
+email,50,1,1,-1.15,spoke.,spoke and congratulations on your inter
+email,129,0,0,-2.678,"our internship program, we are looking for interns to join our team in the following","the search for our intern, we wanted to"
+email,175,1,1,-2.037,out to you to see if you would be interested in sharing your experience with us,out and ask: do you know any fellow UCh
+email,235,1,3,-1.269,who might be interested in this opportunity?,who might be a strong fit for this role
+email,276,0,0,-1.285,,We are particularly interested in stude
+email,345,1,1,-1.888,to the one you described in your email.,to yours: technical experience paired w
+email,407,1,1,-2.564,in the social sciences.,"in technology and social impact.
+
+If so"
+email,472,1,2,-1.779,free to send them our way!,free to share this posting with them or
+email,517,1,4,-1.528,along their contact information.,along their contact information and we
